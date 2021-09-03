@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 21px;
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+}
+
+#header {
+  text-align: center;
+  background-color: #b24242;
+  margin-top: 0;
+  height: 80px;
+  color: #fbe8e8;
+  font-family: monospace;
+  margin: auto;
+  padding-top: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#counter {
+  width: 500px;
+  height: 180px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+#counter button {
+  width: 60px;
+  height: 56px;
+  border-radius: 0px 8px 8px 0px;
+  border: 1px solid #b24242;
+  cursor: pointer;
+  background-color: #b24242;
+  color: white;
+  font-weight: 900;
+  font-size: large;
+}
+
+#counter button:first-child {
+  background-color: white;
+  border-radius: 8px 0 0 8px;
+  color: #b24242;
+}
+
+#counter span {
+  width: 60px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbe8e8;
+  border: 1px solid #b24242;
+  border-left: none;
+}
+
+#counter span input {
+  display: inline;
+  width: 56px;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  text-align: center;
+  color: #b24242;
+  font-size: large;
+}
+
+input:focus {
+  outline: #b24242 solid 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#init {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 10vh;
+  display: table;
+  color: #b24242;
+}
+
+#init > div {
+  display: table-row;
+}
+
+#init div label {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+#init div input {
+  display: table-cell;
+  width: 200px;
+  height: 30px;
+  padding-right: 10px;
+  color: #b24242;
+  border: 1px solid #b24242;
+}
+
+.reinit {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #b24242;
+  color: #fbe8e8;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.reinit:hover {
+  background-color: #7c2e2e;
+}
+
+#btn-div {
+  margin: auto;
+  border: 1px solid black;
+}
